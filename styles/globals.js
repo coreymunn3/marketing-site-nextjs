@@ -25,7 +25,8 @@ export const Container = styled.div`
 
 export const Button = styled.button`
   border-radius: 4px;
-  background: ${(props) => (props.primary ? '#4b59f7' : '#0467fb')};
+  background: ${(props) =>
+    props.primary ? props.theme.colors.primary : props.theme.colors.background};
   white-space: nowrap;
   padding: ${(props) => (props.big ? '1rem 4rem' : '0.5rem 1.5rem')};
   color: #fff;
@@ -36,12 +37,15 @@ export const Button = styled.button`
 
   &:hover {
     transition: all 0.3s ease-out;
-    background: #fff;
-    background: ${(props) => (props.primary ? '#0467fb' : '#4b59f7')};
+    color: #fff;
+    background: ${(props) =>
+      props.primary
+        ? props.theme.colors.primaryDark
+        : props.theme.colors.primary};
   }
 
   @media ${(props) => props.theme.breakpoints.md} {
-    width: 100%auto;
+    width: 100%;
   }
 `;
 

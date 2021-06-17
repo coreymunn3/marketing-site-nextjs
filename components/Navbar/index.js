@@ -52,7 +52,7 @@ const Navbar = () => {
             </NavItem>
             <NavItemBtn>
               <NextLink href='/signup' passHref>
-                <Button>Sign Up</Button>
+                <Button primary>Sign Up</Button>
               </NextLink>
             </NavItemBtn>
           </NavMenu>

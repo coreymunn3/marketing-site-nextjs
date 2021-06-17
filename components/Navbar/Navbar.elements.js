@@ -3,7 +3,7 @@ import { Container } from '../../styles/globals';
 import { IoLogoFirebase } from 'react-icons/io5';
 
 export const Nav = styled.nav`
-  background: #101522;
+  background: ${(props) => props.theme.colors.background};
   height: 80px;
   display: flex;
   justify-content: center;
@@ -37,6 +37,11 @@ export const MobileMenuIcon = styled.div`
   display: none;
   color: white;
   cursor: pointer;
+
+  &:hover {
+    color: ${(props) => props.theme.colors.primary};
+  }
+
   @media ${(props) => props.theme.breakpoints.md} {
     display: block;
     position: absolute;
@@ -63,7 +68,7 @@ export const NavMenu = styled.ul`
     left: ${({ menuOpen }) => (menuOpen ? 0 : '-100%')};
     opacity: 1;
     transition: all 0.5s ease;
-    background: #101522;
+    background: ${(props) => props.theme.colors.background};
   }
 `;
 
@@ -72,7 +77,7 @@ export const NavItem = styled.li`
   border-bottom: 2px solid transparent;
 
   &:hover {
-    border-bottom: 2px solid #4b59f7;
+    border-bottom: ${(props) => `2px solid ${props.theme.colors.primaryLight}`};
   }
 
   ${(props) => props.theme.breakpoints.md} {
@@ -99,7 +104,7 @@ export const NavLink = styled.a`
     display: table;
 
     &:hover {
-      color: #4b59f7;
+      color: ${(props) => props.theme.colors.primary};
       transition: all 0.3s ease;
     }
   }

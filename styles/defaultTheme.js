@@ -4,13 +4,15 @@ export default {
     main: 'Inter, sans-serif',
   },
   // Colors for layout
-  // colors: {
-  //   primary1: "hsl(204,23.8%,95.9%)",
-  //   background1: "#0F1624",
-  //   accent1: "hsl(34.9,98.6%,72.9%)",
-  //   button: "hsl(205.1,100%,36.1%)",
-  //   background2: "hsl(232.7,27.3%,23.7%)",
-  // },s
+  colors: {
+    primary: '#A065CD',
+    primaryDark: '#8D46C3',
+    primaryLight: '#B384D7',
+    background: '#160A1F',
+    // accent1: "hsl(34.9,98.6%,72.9%)",
+    // button: "hsl(205.1,100%,36.1%)",
+    // background2: "hsl(232.7,27.3%,23.7%)",
+  },
   // Breakpoints for responsive design
   breakpoints: {
     sm: 'screen and (max-width: 640px)',
