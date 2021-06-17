@@ -18,8 +18,6 @@ export const NavbarContainer = styled(Container)`
   display: flex;
   justify-content: space-between;
   height: 80px;
-
-  ${Container}
 `;
 
 export const NavLogo = styled.a`
@@ -33,4 +31,86 @@ export const NavLogo = styled.a`
 
 export const NavIcon = styled(IoLogoFirebase)`
   margin-right: 0.5rem;
+`;
+
+export const MobileMenuIcon = styled.div`
+  display: none;
+  color: white;
+  cursor: pointer;
+  @media ${(props) => props.theme.breakpoints.md} {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+  }
+`;
+
+export const NavMenu = styled.ul`
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  color: white;
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 80px;
+    left: ${({ menuOpen }) => (menuOpen ? 0 : '-100%')};
+    opacity: 1;
+    transition: all 0.5s ease;
+    background: #101522;
+  }
+`;
+
+export const NavItem = styled.li`
+  height: 80px;
+  border-bottom: 2px solid transparent;
+
+  &:hover {
+    border-bottom: 2px solid #4b59f7;
+  }
+
+  ${(props) => props.theme.breakpoints.md} {
+    width: 100%;
+
+    &:hover {
+      border: none;
+    }
+  }
+`;
+
+export const NavLink = styled.a`
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+
+    &:hover {
+      color: #4b59f7;
+      transition: all 0.3s ease;
+    }
+  }
+`;
+
+export const NavItemBtn = styled.li`
+  @media ${(props) => props.theme.breakpoints.md} {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+  }
 `;
