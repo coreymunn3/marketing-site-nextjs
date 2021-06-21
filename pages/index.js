@@ -3,7 +3,8 @@ import { homePageSection1 } from '../data';
 
 import { Navbar, InfoSection } from '../components';
 
-const HomePage = () => {
+const HomePage = (props) => {
+  const { homePageSection1 } = props;
   return (
     <div>
       <Navbar />
@@ -13,3 +14,11 @@ const HomePage = () => {
 };
 
 export default HomePage;
+
+export function getStaticProps() {
+  return {
+    props: {
+      homePageSection1: homePageSection1,
+    },
+  };
+}
