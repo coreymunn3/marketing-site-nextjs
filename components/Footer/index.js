@@ -16,7 +16,6 @@ import {
 import { FaFacebook, FaTwitter, FaInstagram, FaGithub } from 'react-icons/fa';
 
 const Footer = ({ data }) => {
-  console.log(data);
   return (
     <FooterContainer>
       <FooterSubscription>

@@ -66,3 +66,27 @@ export const footerData = [
     ],
   },
 ];
+
+export const pricingData = [
+  {
+    plan: 'Starter',
+    planLevel: 1,
+    cost: '9.99',
+    planTerm: 'Per Month',
+    features: ['3 Accounts', 'Up To 1k Spend', 'Targeted Analytics'],
+  },
+  {
+    plan: 'Business',
+    planLevel: 2,
+    cost: '49.99',
+    planTerm: 'Per Month',
+    features: ['25 Accounts', 'Up To 100k Spend', 'Lead Gen Analytics'],
+  },
+  {
+    plan: 'Enterprise',
+    planLevel: 3,
+    cost: '1,000+',
+    planTerm: 'Per Month',
+    features: ['Unlimited Accounts', 'Unlimited Spend', '24/7 Support'],
+  },
+];
