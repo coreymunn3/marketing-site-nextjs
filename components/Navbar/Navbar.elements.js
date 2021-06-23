@@ -74,9 +74,17 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
   height: 80px;
-  border-bottom: 2px solid transparent;
 
-  &:hover {
+  &:after {
+    display: block;
+    content: '';
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+    transform: scaleX(0);
+  }
+
+  &:hover:after {
+    transform: scaleX(1);
     border-bottom: ${(props) => `2px solid ${props.theme.colors.primaryLight}`};
   }
 
