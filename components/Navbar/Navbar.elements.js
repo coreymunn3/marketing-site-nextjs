@@ -60,6 +60,7 @@ export const NavMenu = styled.ul`
   color: white;
 
   @media ${(props) => props.theme.breakpoints.md} {
+    padding: 0.5rem;
     flex-direction: column;
     width: 100%;
     height: 90vh;
