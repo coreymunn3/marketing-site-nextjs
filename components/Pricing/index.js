@@ -13,6 +13,8 @@ import {
 } from './Pricing.elements';
 import { Button } from '../../styles/globals';
 import { FaUser, FaUsers, FaUserTie } from 'react-icons/fa';
+import Divider from '../DividerSVG';
+import theme from '../../styles/defaultTheme';
 
 const index = ({ data }) => {
   return (
@@ -20,7 +22,7 @@ const index = ({ data }) => {
       <PricingHeading>Our Pricing</PricingHeading>
       <PricingCardContainer>
         {data.map((pricingCard) => (
-          <PricingCard>
+          <PricingCard key={pricingCard.plan}>
             <CardBody>
               <CardIcon>
                 {pricingCard.planLevel === 1 && <FaUser fontSize='3rem' />}
@@ -32,7 +34,7 @@ const index = ({ data }) => {
               <CardLength>{pricingCard.planTerm}</CardLength>
               <CardFeatures>
                 {pricingCard.features.map((feature) => (
-                  <CardFeature>{feature}</CardFeature>
+                  <CardFeature key={feature}>{feature}</CardFeature>
                 ))}
               </CardFeatures>
               <Button primary>Choose Plan</Button>
@@ -40,6 +42,10 @@ const index = ({ data }) => {
           </PricingCard>
         ))}
       </PricingCardContainer>
+      <Divider
+        svgColor={theme.colors.primaryLight}
+        svgBg={theme.colors.background}
+      />
     </PricingSection>
   );
 };

@@ -30,10 +30,10 @@ const Footer = ({ data }) => {
       </FooterSubscription>
       <FooterLinksContainer>
         {data.map((section) => (
-          <FooterLinks>
+          <FooterLinks key={section.title}>
             <FooterLinkTitle>{section.title}</FooterLinkTitle>
             {section.links.map((link) => (
-              <FooterLink>{link}</FooterLink>
+              <FooterLink key={link}>{link}</FooterLink>
             ))}
           </FooterLinks>
         ))}

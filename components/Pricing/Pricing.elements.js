@@ -1,14 +1,15 @@
 import styled from 'styled-components';
 
 export const PricingSection = styled.div`
-  padding-top: 160px;
-  padding-bottom: 100px;
+  padding-bottom: 250px;
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
   background-color: ${(props) => props.theme.colors.primaryLight};
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  position: relative;
 `;
 
 export const PricingHeading = styled.h2`

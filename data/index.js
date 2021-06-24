@@ -1,3 +1,5 @@
+import Theme from '../styles/defaultTheme';
+
 export const homePageSection1 = {
   lightBg: false,
   imgStart: true,
@@ -8,6 +10,8 @@ export const homePageSection1 = {
   buttonLabel: 'Get Started!',
   src: '/images/business-goals.svg',
   alt: 'alt text',
+  svgBg: Theme.colors.offWhite,
+  svgColor: Theme.colors.background,
 };
 
 export const homePageSection2 = {
@@ -20,6 +24,8 @@ export const homePageSection2 = {
   buttonLabel: 'Get Started!',
   src: '/images/business-goals.svg',
   alt: 'alt text',
+  svgBg: Theme.colors.background,
+  svgColor: Theme.colors.offWhite,
 };
 
 export const homePageSection3 = {
@@ -32,6 +38,8 @@ export const homePageSection3 = {
   buttonLabel: 'Get Started!',
   src: '/images/business-goals.svg',
   alt: 'alt text',
+  svgBg: Theme.colors.primaryLight,
+  svgColor: Theme.colors.background,
 };
 
 export const footerData = [

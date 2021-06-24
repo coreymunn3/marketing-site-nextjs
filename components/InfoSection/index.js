@@ -9,8 +9,12 @@ import {
   Subtitle,
   ImgWrapper,
   StyledImg,
+  CurveContainer,
+  CurveSVG,
+  PathSVG,
 } from './InfoSection.elements';
 import { Container, Button } from '../../styles/globals';
+import Divider from '../DividerSVG';
 import NextLink from 'next/link';
 
 const InfoSection = (props) => {
@@ -23,6 +27,8 @@ const InfoSection = (props) => {
     buttonLabel,
     src,
     alt,
+    svgBg,
+    svgColor,
   } = props;
 
   const lightTopLine = lightBg ? false : true;
@@ -54,6 +60,7 @@ const InfoSection = (props) => {
             </InfoColumn>
           </InfoRow>
         </Container>
+        <Divider svgBg={svgBg} svgColor={svgColor} />
       </InfoSec>
     </Fragment>
   );

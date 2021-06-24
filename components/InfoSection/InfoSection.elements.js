@@ -2,14 +2,17 @@ import styled from 'styled-components';
 
 export const InfoSec = styled.div`
   color: #fff;
-  padding: 160px 0%;
+  padding-top: 50px;
+  padding-bottom: 250px;
   background: ${(props) =>
     props.lightBg
       ? props.theme.colors.offWhite
       : props.theme.colors.background};
 
+  position: relative;
+
   @media ${(props) => props.theme.breakpoints.md} {
-    padding: 40px 0;
+    padding: 100px 0;
   }
 `;
 
@@ -38,7 +41,6 @@ export const InfoColumn = styled.div`
 
 export const TextWrapper = styled.div`
   max-width: 540px;
-  padding-bottom: 60px;
 `;
 
 export const TopLine = styled.div`
