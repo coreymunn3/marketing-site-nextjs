@@ -15,9 +15,9 @@ import {
 } from './Footer.elements';
 import { FaFacebook, FaTwitter, FaInstagram, FaGithub } from 'react-icons/fa';
 
-const Footer = ({ data }) => {
+const Footer = ({ data, name }) => {
   return (
-    <FooterContainer>
+    <FooterContainer name={name}>
       <FooterSubscription>
         <FooterSubHeading>
           Join our Exclusive membership to recieve the latest news and trends

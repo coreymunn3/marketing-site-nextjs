@@ -18,14 +18,14 @@ const HomePage = (props) => {
     pricingData,
   } = props;
   return (
-    <div>
+    <>
       <Navbar />
-      <InfoSection {...homePageSection1} />
+      <InfoSection {...homePageSection1} name='section-home' />
       <InfoSection {...homePageSection2} />
-      <InfoSection {...homePageSection3} />
-      <Pricing data={pricingData} />
+      <InfoSection {...homePageSection3} name='section-services' />
+      <Pricing data={pricingData} name='section-pricing' />
       <Footer data={footerData} />
-    </div>
+    </>
   );
 };
 

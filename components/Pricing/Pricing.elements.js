@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const PricingSection = styled.div`
   padding-bottom: 250px;
-  padding-top: 50px;
+  padding-top: 75px;
   display: flex;
   flex-direction: column;
   background-color: ${(props) => props.theme.colors.primaryLight};

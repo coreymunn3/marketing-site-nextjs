@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const InfoSec = styled.div`
+export const InfoSec = styled.section`
   color: #fff;
   padding-top: 50px;
   padding-bottom: 250px;

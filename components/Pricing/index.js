@@ -16,9 +16,9 @@ import { FaUser, FaUsers, FaUserTie } from 'react-icons/fa';
 import Divider from '../DividerSVG';
 import theme from '../../styles/defaultTheme';
 
-const index = ({ data }) => {
+const index = ({ data, name }) => {
   return (
-    <PricingSection>
+    <PricingSection name={name}>
       <PricingHeading>Our Pricing</PricingHeading>
       <PricingCardContainer>
         {data.map((pricingCard) => (

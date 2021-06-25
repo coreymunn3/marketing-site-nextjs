@@ -15,6 +15,7 @@ import { FaBars } from 'react-icons/fa';
 import { MdClose } from 'react-icons/md';
 import NextLink from 'next/link';
 import { useRouter } from 'next/router';
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
   const router = useRouter();
@@ -36,19 +37,37 @@ const Navbar = () => {
           </MobileMenuIcon>
           <NavMenu onClick={handleMenuOpen} menuOpen={menuOpen}>
             <NavItem>
-              <NextLink href='/' passHref>
-                <NavLink>Home</NavLink>
-              </NextLink>
+              <NavLink
+                to='section-home'
+                spy={true}
+                smooth={true}
+                duration={500}
+                activeClass='active'
+              >
+                Home
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NextLink href='/services' passHref>
-                <NavLink>Services</NavLink>
-              </NextLink>
+              <NavLink
+                to='section-services'
+                spy={true}
+                smooth={true}
+                duration={500}
+                activeClass='active'
+              >
+                Services
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NextLink href='/products' passHref>
-                <NavLink>Products</NavLink>
-              </NextLink>
+              <NavLink
+                to='section-pricing'
+                spy={true}
+                smooth={true}
+                duration={500}
+                activeClass='active'
+              >
+                Pricing
+              </NavLink>
             </NavItem>
             <NavItemBtn>
               <NextLink href='/signup' passHref>

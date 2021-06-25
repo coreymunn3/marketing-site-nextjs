@@ -19,6 +19,7 @@ import NextLink from 'next/link';
 
 const InfoSection = (props) => {
   const {
+    name,
     lightBg,
     imgStart,
     topLine,
@@ -38,7 +39,7 @@ const InfoSection = (props) => {
 
   return (
     <Fragment>
-      <InfoSec lightBg={lightBg}>
+      <InfoSec lightBg={lightBg} name={name}>
         <Container>
           <InfoRow imgStart={imgStart}>
             <InfoColumn>

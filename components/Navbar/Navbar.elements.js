@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Container } from '../../styles/globals';
 import { IoLogoFirebase } from 'react-icons/io5';
+import { Link } from 'react-scroll';
 
 export const Nav = styled.nav`
   background: ${(props) => props.theme.colors.background};
@@ -98,13 +99,18 @@ export const NavItem = styled.li`
   }
 `;
 
-export const NavLink = styled.a`
+export const NavLink = styled(Link)`
   color: #fff;
   display: flex;
   align-items: center;
   text-decoration: none;
   padding: 0.5rem 1rem;
   height: 100%;
+  cursor: pointer;
+
+  &.active {
+    color: ${(props) => props.theme.colors.primary};
+  }
 
   @media ${(props) => props.theme.breakpoints.md} {
     text-align: center;
