@@ -22,7 +22,7 @@ export const NavbarContainer = styled(Container)`
 `;
 
 export const NavLogo = styled.a`
-  color: #fff;
+  color: ${(props) => props.theme.colors.primary};
   justify-self: flex-start;
   cursor: pointer;
   text-decoration: none;

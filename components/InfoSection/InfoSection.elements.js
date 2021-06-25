@@ -77,7 +77,7 @@ export const Subtitle = styled.h2`
 
 export const ImgWrapper = styled.div`
   max-width: 550px;
-  margin-right: 15px;
+  margin-right: 30px;
   display: flex;
   justify-content: ${(props) => (props.start ? 'flex-start' : 'flex-end')};
 `;

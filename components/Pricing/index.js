@@ -37,7 +37,7 @@ const index = ({ data, name }) => {
                   <CardFeature key={feature}>{feature}</CardFeature>
                 ))}
               </CardFeatures>
-              <Button primary>Choose Plan</Button>
+              <Button primary>{pricingCard.buttonText}</Button>
             </CardBody>
           </PricingCard>
         ))}

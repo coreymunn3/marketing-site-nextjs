@@ -9,9 +9,6 @@ import {
   Subtitle,
   ImgWrapper,
   StyledImg,
-  CurveContainer,
-  CurveSVG,
-  PathSVG,
 } from './InfoSection.elements';
 import { Container, Button } from '../../styles/globals';
 import Divider from '../DividerSVG';

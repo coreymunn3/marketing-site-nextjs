@@ -3,13 +3,13 @@ import Theme from '../styles/defaultTheme';
 export const homePageSection1 = {
   lightBg: false,
   imgStart: true,
-  topLine: 'Marketing Agency',
-  headline: 'Lead Generation Specialist for Online Businesses',
+  topLine: 'Who We Are',
+  headline: 'Industry Leading Digital Marketing',
   description:
-    'We help business owners increase their revenue. Our team of unique specialists can help you achieve your business goals.',
+    'Through branding, digital marketing and public relations we help organizations of all sizes compete and win with expert strategy, powerful creative and award-winning websites, campaigns and digital experiences.',
   buttonLabel: 'Get Started!',
-  src: '/images/business-goals.svg',
-  alt: 'alt text',
+  src: '/images/digital-marketing.svg',
+  alt: 'digital marketing',
   svgBg: Theme.colors.offWhite,
   svgColor: Theme.colors.background,
 };
@@ -17,13 +17,14 @@ export const homePageSection1 = {
 export const homePageSection2 = {
   lightBg: true,
   imgStart: false,
-  topLine: 'Marketing Agency',
-  headline: 'Lead Generation Specialist for Online Businesses',
+  topLine: 'Our Advantage',
+  headline: 'Lead Generation Specialists Working for You',
   description:
-    'We help business owners increase their revenue. Our team of unique specialists can help you achieve your business goals.',
+    'We go the extra mile to help our clients generated leads and convert new clients & grow revenue from existing clients.',
+
   buttonLabel: 'Get Started!',
   src: '/images/business-goals.svg',
-  alt: 'alt text',
+  alt: 'lead generation',
   svgBg: Theme.colors.background,
   svgColor: Theme.colors.offWhite,
 };
@@ -31,12 +32,12 @@ export const homePageSection2 = {
 export const homePageSection3 = {
   lightBg: false,
   imgStart: true,
-  topLine: 'Marketing Agency',
-  headline: 'Lead Generation Specialist for Online Businesses',
+  topLine: 'What We Do',
+  headline: 'Best In Class Services',
   description:
     'We help business owners increase their revenue. Our team of unique specialists can help you achieve your business goals.',
   buttonLabel: 'Get Started!',
-  src: '/images/business-goals.svg',
+  src: '/images/services.svg',
   alt: 'alt text',
   svgBg: Theme.colors.primaryLight,
   svgColor: Theme.colors.background,
@@ -82,6 +83,7 @@ export const pricingData = [
     cost: '9.99',
     planTerm: 'Per Month',
     features: ['3 Accounts', 'Up To 1k Spend', 'Targeted Analytics'],
+    buttonText: 'Choose Plan',
   },
   {
     plan: 'Business',
@@ -89,6 +91,7 @@ export const pricingData = [
     cost: '49.99',
     planTerm: 'Per Month',
     features: ['25 Accounts', 'Up To 100k Spend', 'Lead Gen Analytics'],
+    buttonText: 'Choose Plan',
   },
   {
     plan: 'Enterprise',
@@ -96,5 +99,6 @@ export const pricingData = [
     cost: '1,000+',
     planTerm: 'Per Month',
     features: ['Unlimited Accounts', 'Unlimited Spend', '24/7 Support'],
+    buttonText: 'Contact Us',
   },
 ];

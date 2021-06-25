@@ -29,7 +29,7 @@ const Navbar = () => {
         <NavbarContainer>
           <NextLink href='/' passHref>
             <NavLogo>
-              <NavIcon /> ULTRA
+              <NavIcon /> YOUR COMPANY
             </NavLogo>
           </NextLink>
           <MobileMenuIcon onClick={handleMenuOpen}>

@@ -7,6 +7,7 @@ export const CurveContainer = styled.div`
 `;
 
 export const CurveSVG = styled.svg`
+  border: 'none';
   position: absolute;
   bottom: 0;
   background-color: ${(props) => props.svgBg};
