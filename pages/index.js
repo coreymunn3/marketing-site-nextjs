@@ -19,7 +19,7 @@ const HomePage = (props) => {
     pricingData,
   } = props;
 
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleCloseModal = () => {
     setIsOpen(false);
