@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { Fragment, useState } from 'react';
 import {
   homePageSection1,
   homePageSection2,
@@ -7,7 +8,7 @@ import {
   pricingData,
 } from '../data';
 
-import { Navbar, InfoSection, Footer, Pricing } from '../components';
+import { Navbar, InfoSection, Footer, Pricing, Modal } from '../components';
 
 const HomePage = (props) => {
   const {
@@ -17,15 +18,27 @@ const HomePage = (props) => {
     footerData,
     pricingData,
   } = props;
+
+  const [isOpen, setIsOpen] = useState(true);
+
+  const handleCloseModal = () => {
+    setIsOpen(false);
+  };
+
+  const handleOpenModal = () => {
+    setIsOpen(true);
+  };
+
   return (
-    <>
-      <Navbar />
+    <Fragment>
+      <Navbar handleOpenModal={handleOpenModal} />
       <InfoSection {...homePageSection1} name='section-home' />
       <InfoSection {...homePageSection2} />
       <InfoSection {...homePageSection3} name='section-services' />
       <Pricing data={pricingData} name='section-pricing' />
       <Footer data={footerData} />
-    </>
+      <Modal isOpen={isOpen} handleClose={handleCloseModal} />
+    </Fragment>
   );
 };
 

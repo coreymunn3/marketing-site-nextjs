@@ -17,7 +17,7 @@ import NextLink from 'next/link';
 import { useRouter } from 'next/router';
 import { Link } from 'react-scroll';
 
-const Navbar = () => {
+const Navbar = ({ handleOpenModal }) => {
   const router = useRouter();
 
   const [menuOpen, setMenuOpen] = useState(false);
@@ -70,9 +70,9 @@ const Navbar = () => {
               </NavLink>
             </NavItem>
             <NavItemBtn>
-              <NextLink href='/signup' passHref>
-                <Button primary>Sign Up</Button>
-              </NextLink>
+              <Button onClick={handleOpenModal} primary>
+                Sign In
+              </Button>
             </NavItemBtn>
           </NavMenu>
         </NavbarContainer>
