@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const InfoSec = styled.section`
   color: #fff;
   padding-top: 50px;
-  padding-bottom: 250px;
+  padding-bottom: 280px;
   background: ${(props) =>
     props.lightBg
       ? props.theme.colors.offWhite
