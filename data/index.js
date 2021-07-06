@@ -22,7 +22,7 @@ export const homePageSection2 = {
   description:
     'We go the extra mile to help our clients generated leads and convert new clients & grow revenue from existing clients.',
 
-  buttonLabel: 'Get Started!',
+  buttonLabel: 'Join Us',
   src: '/images/business-goals.svg',
   alt: 'lead generation',
   svgBg: Theme.colors.background,
@@ -36,7 +36,7 @@ export const homePageSection3 = {
   headline: 'Best In Class Services',
   description:
     'We help business owners increase their revenue. Our team of unique specialists can help you achieve your business goals.',
-  buttonLabel: 'Get Started!',
+  buttonLabel: 'View our Services',
   src: '/images/services.svg',
   alt: 'alt text',
   svgBg: Theme.colors.primaryLight,

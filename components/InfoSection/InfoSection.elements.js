@@ -2,17 +2,15 @@ import styled from 'styled-components';
 
 export const InfoSec = styled.section`
   color: #fff;
-  padding-top: 50px;
-  padding-bottom: 280px;
+  padding-top: ${(props) =>
+    props.name === 'section-home' ? '100px' : '300px'};
   background: ${(props) =>
     props.lightBg
       ? props.theme.colors.offWhite
       : props.theme.colors.background};
 
-  position: relative;
-
   @media ${(props) => props.theme.breakpoints.md} {
-    padding: 100px 0;
+    padding-top: 100px;
   }
 `;
 

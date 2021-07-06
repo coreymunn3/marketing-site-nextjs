@@ -3,11 +3,16 @@ import { Button } from '../../styles/globals';
 
 export const FooterContainer = styled.div`
   background-color: ${(props) => props.theme.colors.background};
-  padding: 4rem 0 2rem 0;
+  padding-bottom: 3rem;
+  padding-top: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    padding-top: 100px;
+  }
 `;
 
 export const FooterSubscription = styled.section`

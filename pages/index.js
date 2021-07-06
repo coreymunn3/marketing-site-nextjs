@@ -31,6 +31,9 @@ const HomePage = (props) => {
 
   return (
     <Fragment>
+      <Head>
+        <title>Your Company</title>
+      </Head>
       <Navbar handleOpenModal={handleOpenModal} />
       <InfoSection {...homePageSection1} name='section-home' />
       <InfoSection {...homePageSection2} />

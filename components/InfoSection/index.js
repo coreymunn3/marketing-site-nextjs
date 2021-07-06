@@ -27,6 +27,7 @@ const InfoSection = (props) => {
     alt,
     svgBg,
     svgColor,
+    isFirst,
   } = props;
 
   const lightTopLine = lightBg ? false : true;

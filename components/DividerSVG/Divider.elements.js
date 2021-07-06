@@ -2,15 +2,18 @@ import styled from 'styled-components';
 
 export const CurveContainer = styled.div`
   width: 100%;
-  position: absolute;
-  bottom: 0;
+  position: relative;
+  display: block;
+  margin-top: -1px;
 `;
 
 export const CurveSVG = styled.svg`
   border: 'none';
   position: absolute;
-  bottom: 0;
-  background-color: ${(props) => props.svgBg};
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* background-color: ${(props) => props.svgBg}; */
 `;
 
 export const PathSVG = styled.path`
